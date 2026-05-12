@@ -1,0 +1,112 @@
+{
+  "versao": "2026.05.11",
+  "descricao": "Regras fiscais RJ — RV Gestão Inteligente",
+  "fontes": [
+    "Lei 2.657/96 (ICMS RJ)",
+    "Lei 9.040/2020 (alíquota 20% desde 03/03/2021)",
+    "RICMS-RJ Decreto 27.427/2000 (ST RJ)",
+    "Lei 10.925/2004 (PIS/COFINS isenção cesta básica)",
+    "LC 214/2025 (Reforma tributária IBS/CBS)"
+  ],
+
+  "icms_rj": {
+    "aliquota_geral": 20.0,
+    "aliquotas_especiais": [
+      {"ncm_prefixo": "2203", "aliquota": 25.0, "descricao": "Cerveja"},
+      {"ncm_prefixo": "2204", "aliquota": 25.0, "descricao": "Vinhos"},
+      {"ncm_prefixo": "2205", "aliquota": 25.0, "descricao": "Vermutes"},
+      {"ncm_prefixo": "2206", "aliquota": 25.0, "descricao": "Bebidas fermentadas"},
+      {"ncm_prefixo": "2207", "aliquota": 25.0, "descricao": "Álcool etílico"},
+      {"ncm_prefixo": "2208", "aliquota": 25.0, "descricao": "Aguardentes e destilados"},
+      {"ncm_prefixo": "2401", "aliquota": 25.0, "descricao": "Tabaco não manufaturado"},
+      {"ncm_prefixo": "2402", "aliquota": 25.0, "descricao": "Charutos e cigarrilhas"},
+      {"ncm_prefixo": "2403", "aliquota": 25.0, "descricao": "Outros tabacos manufaturados"},
+      {"ncm_prefixo": "2709", "aliquota": 12.0, "descricao": "Petróleo bruto"},
+      {"ncm_prefixo": "2710", "aliquota": 12.0, "descricao": "Combustíveis derivados petróleo"},
+      {"ncm_prefixo": "0201", "aliquota": 12.0, "descricao": "Carnes bovinas frescas"},
+      {"ncm_prefixo": "0202", "aliquota": 12.0, "descricao": "Carnes bovinas congeladas"},
+      {"ncm_prefixo": "0203", "aliquota": 12.0, "descricao": "Carnes suínas"},
+      {"ncm_prefixo": "0207", "aliquota": 12.0, "descricao": "Aves frescas/congeladas"},
+      {"ncm_prefixo": "0301", "aliquota": 12.0, "descricao": "Peixes vivos"},
+      {"ncm_prefixo": "0302", "aliquota": 12.0, "descricao": "Peixes frescos"},
+      {"ncm_prefixo": "0303", "aliquota": 12.0, "descricao": "Peixes congelados"},
+      {"ncm_prefixo": "0304", "aliquota": 12.0, "descricao": "Filés de peixe"},
+      {"ncm_prefixo": "1006", "aliquota": 12.0, "descricao": "Arroz"},
+      {"ncm_prefixo": "1101", "aliquota": 12.0, "descricao": "Farinha de trigo"},
+      {"ncm_prefixo": "1512", "aliquota": 12.0, "descricao": "Óleo de soja/girassol"},
+      {"ncm_prefixo": "0401", "aliquota": 12.0, "descricao": "Leite"},
+      {"ncm_prefixo": "0402", "aliquota": 12.0, "descricao": "Leite em pó"},
+      {"ncm_prefixo": "1905", "aliquota": 12.0, "descricao": "Pão e produtos de padaria"},
+      {"ncm_prefixo": "0702", "aliquota": 12.0, "descricao": "Tomates frescos"},
+      {"ncm_prefixo": "0703", "aliquota": 12.0, "descricao": "Cebola, alho"},
+      {"ncm_prefixo": "0704", "aliquota": 12.0, "descricao": "Couves e similares"},
+      {"ncm_prefixo": "0801", "aliquota": 12.0, "descricao": "Coco, castanha, caju"},
+      {"ncm_prefixo": "0803", "aliquota": 12.0, "descricao": "Bananas"},
+      {"ncm_prefixo": "0804", "aliquota": 12.0, "descricao": "Tâmaras, abacaxi"},
+      {"ncm_prefixo": "3001", "aliquota": 12.0, "descricao": "Medicamentos"},
+      {"ncm_prefixo": "3002", "aliquota": 12.0, "descricao": "Vacinas e soros"},
+      {"ncm_prefixo": "3003", "aliquota": 12.0, "descricao": "Medicamentos (mistura)"},
+      {"ncm_prefixo": "3004", "aliquota": 12.0, "descricao": "Medicamentos (dose)"}
+    ]
+  },
+
+  "reforma_tributaria": {
+    "cbs_referencia": 8.8,
+    "ibs_referencia": 17.7,
+    "total_referencia": 26.5,
+    "vigencia_plena": 2033,
+    "transicao": {
+      "2026": {"cbs": 0.9, "ibs": 0.0},
+      "2027": {"cbs": 1.65, "ibs": 0.0},
+      "2028": {"cbs": 3.0, "ibs": 1.8},
+      "2029": {"cbs": 4.6, "ibs": 3.2},
+      "2030": {"cbs": 6.4, "ibs": 7.6},
+      "2031": {"cbs": 7.6, "ibs": 12.4},
+      "2032": {"cbs": 8.8, "ibs": 14.7}
+    },
+    "is_aliquotas": [
+      {"ncm_prefixo": "2203", "aliquota": 20.0, "descricao": "Cerveja"},
+      {"ncm_prefixo": "2204", "aliquota": 20.0, "descricao": "Vinhos"},
+      {"ncm_prefixo": "2208", "aliquota": 20.0, "descricao": "Destilados"},
+      {"ncm_prefixo": "2402", "aliquota": 100.0, "descricao": "Cigarros"},
+      {"ncm_prefixo": "2202", "aliquota": 20.0, "descricao": "Bebidas açucaradas"},
+      {"ncm_prefixo": "8703", "aliquota": 7.0, "descricao": "Automóveis"},
+      {"ncm_prefixo": "8711", "aliquota": 7.0, "descricao": "Motocicletas"},
+      {"ncm_prefixo": "9303", "aliquota": 25.0, "descricao": "Armas de fogo"}
+    ],
+    "ncm_aliquota_zero": ["0201","0202","0203","0207","0301","0302","0303","0304","1006","1101","0401","0402","0703","0702","3004","3003"],
+    "ncm_reducao_60pct": ["0901","0902","0405","0406","1601","1602","2501","9018","9019","9021"]
+  },
+
+  "pis_cofins": {
+    "simples": {"cst": "49", "pis": 0.0, "cofins": 0.0},
+    "presumido": {"cst": "01", "pis": 0.65, "cofins": 3.0},
+    "real": {"cst": "01", "pis": 1.65, "cofins": 7.6},
+    "isencoes_ncm": ["0201","0202","0203","0204","0205","0206","0207","0208","0209",
+                     "0301","0302","0303","0304","0305","0306","0307",
+                     "0401","0402","0403","0404","0405","0406",
+                     "0701","0702","0703","0704","0705","0706","0707","0708","0709",
+                     "0801","0802","0803","0804","0805","0806","0807","0808","0809",
+                     "1001","1006","1101","1102","1512","1517","1905"]
+  },
+
+  "ncm_correcoes": {
+    "22072020": {"novo": "22084000", "motivo": "Cachaça: NCM correto é 22084000"},
+    "00000000": {"novo": null, "motivo": "NCM em branco — verificar manualmente"},
+    "44129900": {"novo": "44219090", "motivo": "Pregadores de madeira: 44219090"},
+    "96032100": {"novo": "96032900", "motivo": "Escovas: verificar subcategoria"}
+  },
+
+  "cfop_padrao": {
+    "venda_interna_normal": "5102",
+    "venda_interna_st_substituido": "5405",
+    "venda_interna_isento": "5102",
+    "devolucao_compra": "1201"
+  },
+
+  "csosn_padrao": {
+    "simples_normal": "102",
+    "simples_st_substituido": "500",
+    "simples_isento": "400"
+  }
+}
